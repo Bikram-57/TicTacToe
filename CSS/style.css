@@ -5,7 +5,7 @@
 
 body {
     height: 100vh;
-    background-color: aqua;
+    background-color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,45 +49,70 @@ body {
     text-align: center;
 }
 
-#reset, #new-btn {
+/* #reset,
+#new-btn {
     padding: 1rem;
     border-radius: 0.5rem;
     border: none;
     font-size: 1rem;
     font-weight: bold;
+} */
+
+.btn-custom{
+    background-color: #65e5df;
 }
 
-#msg {
-    font-size: 3rem;
-    color: aliceblue;
+.btn-custom:hover{
+    background-color: #48ddd6;
 }
 
 .hide {
     display: none;
 }
 
-.hide-main{
+.hide-main {
     display: none;
 }
 
-/* Small screens (mobile) */
 @media (max-width: 480px) {
-   .box{
-    font-size: 2.5rem;
-   }
-  }
-  
-  /* Medium screens (tablets) */
-  @media (min-width: 481px) and (max-width: 767px) {
-.box{
-    font-size: 7rem;
-}
-  }
-  
-  /* Large screens (desktops) */
-  @media (min-width: 768px) {
-    .box{
-    font-size: 8rem;
+    .box {
+        font-size: 2.5rem;
     }
-  }
-  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .box {
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .box {
+        font-size: 8rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #msg {
+        font-size: 3rem;
+        color: black;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #msg {
+        font-size: 4rem;
+        color: black;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #msg {
+        font-size: 5rem;
+        color: black;
+    }
+
+}
