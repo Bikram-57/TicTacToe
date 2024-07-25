@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.msgContainer {
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vmin;
+}
+
+.box {
+    height: 19vmin;
+    width: 19vmin;
+    border-radius: 1rem;
+    border: none;
+    /* font-size: 8rem; */
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+}
+
+#reset, #new-btn {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#msg {
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-main{
+    display: none;
+}
+
+/* Small screens (mobile) */
+@media (max-width: 480px) {
+   .box{
+    font-size: 2.5rem;
+   }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 481px) and (max-width: 767px) {
+.box{
+    font-size: 7rem;
+}
+  }
+  
+  /* Large screens (desktops) */
+  @media (min-width: 768px) {
+    .box{
+    font-size: 8rem;
+    }
+  }
+  
